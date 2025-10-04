@@ -86,6 +86,10 @@ namespace EDIDResetTool
                         Console.WriteLine("Press any key to exit...");
                         Console.ReadKey();
                     }
+                    else
+                    {
+                        ConsoleWindow.Show(); // Show console in case quiet mode was used manually from command line session - ensuring CMD is not running hidden
+                    }
                 }
                 catch (Exception ex)
                 {

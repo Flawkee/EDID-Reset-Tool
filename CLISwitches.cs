@@ -89,7 +89,7 @@ namespace EDIDResetTool
         {
             string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Console.WriteLine($"EDID Reset Tool v{version}\n");
-            Console.WriteLine("Copyright (c) 2025 Nir Hazan. Licensed under the MIT License.");
+            Console.WriteLine("Copyright (c) 2025 Flawkee (Nir Hazan). Licensed under the MIT License.");
             Console.WriteLine("Free to fork, modify, and distribute. See LICENSE for details.\n");
         }
 
