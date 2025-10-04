@@ -4,7 +4,7 @@
 
 A lightweight, open-source Windows utility to fix intermittent audio dropouts caused by EDID (Extended Display Identification Data) handshake failures in multi-device chains (e.g., GPU → Monitor → eARC Soundbar like Sonos Beam). It works across all graphics drivers publishing High Definition Audio Devices (e.g., AMD, NVIDIA, Intel) and monitors supporting DDC/CI (Display Data Channel/Command Interface) for input toggling.
 
-Built with C# (.NET 8+ must be installed), it embeds Microsoft's devcon.exe and NirSoft's ControlMyMonitor.exe for device management and monitor control. No installation required—portable EXE.
+Built with C# (.NET 8+), it embeds Microsoft's devcon.exe and NirSoft's ControlMyMonitor.exe for device management and monitor control. No installation required—portable EXE.
 
 ## Features
 
@@ -14,7 +14,7 @@ Built with C# (.NET 8+ must be installed), it embeds Microsoft's devcon.exe and 
 - **Interactive Setup Wizard**: First-run detection of monitors and audio devices, with configurable delays.
 - **CLI-Friendly**: Command-line switches for config viewing/editing, resets, and silent runs.
 - **Scheduled Task Integration**: Optional auto-run on logon, unlock, or sleep resume (Kernel-Power Event ID 107).
-- **Portable & Self-Contained**: Single EXE (<1MB) with embedded tools—no dependencies or installs (excluding .NET 8+).
+- **Portable & Self-Contained**: Single EXE with embedded tools—no dependencies or installs (excluding .NET 8+).
 
 ## Quick Start
 
