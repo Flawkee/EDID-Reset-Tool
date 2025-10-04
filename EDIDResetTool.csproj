@@ -6,12 +6,30 @@
     <Nullable>enable</Nullable>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <ApplicationIcon>image.ico</ApplicationIcon>
+    <Title>EDID Reset Tool</Title>
+    <Authors>Flawkee</Authors>
+    <Company>Flawkee</Company>
+    <Description>A lightweight, open-source Windows utility to fix intermittent audio dropouts caused by EDID (Extended Display Identification Data) handshake failures in multi-device chains.</Description>
+    <PackageProjectUrl>https://github.com/Flawkee/EDID-Reset-Tool</PackageProjectUrl>
+    <Copyright>Flawkee</Copyright>
+    <PackageIcon>image.ico</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Flawkee/EDID-Reset-Tool</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
 	
   <ItemGroup>
     <None Remove="ControlMyMonitor.exe" />
     <None Remove="devcon.exe" />
+  </ItemGroup>
+
+	
+  <ItemGroup>
+    <Content Include="image.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,8 +47,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="image.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="LICENSE">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
